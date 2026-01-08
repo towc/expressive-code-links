@@ -75,11 +75,8 @@ class LinkAnnotation extends ExpressiveCodeAnnotation {
         // e.g.
         //   con[st x](href) = 1
         //   
-        // If EC considers `const` as a separate `span` element from `x`,
-        // which is needs to do to give them different colors,
-        // then this bit of code will break.
-        //
-        // I'm not aware of any other applicable scenarios.
+        // `const` and `x` are put in different `spans`s by EC
+        // in order for syntax highlight to work. 
 
         type Node = object & { value?: string, children?: Node[] };
 

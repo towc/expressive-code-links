@@ -1,6 +1,6 @@
 {
   "name": "expressive-code-links",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Links inside code blocks, by escaping markdown syntax",
   "keywords": [],
   "homepage": "https://github.com/towc/expressive-code-links#readme",

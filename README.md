@@ -6,7 +6,7 @@ Allows you to add links to code blocks, by prepending them with `\`:
 
 ```js
 // comes from \[towc/expressive-code-links](https://github.com/towc/expressive-code-links)
-import { pluginLink } from '\[expressive-code-links]](https://github.com/towc/expressive-code-links)'
+import { pluginLink } from '\[expressive-code-links](https://www.npmjs.com/package/expressive-code-links)'
 
 // can have multiple links in one line!
 // usage as per \[expressive code](https://expressive-code.com)'s \[plugin documentation](https://expressive-code.com/reference/configuration/#plugins)
