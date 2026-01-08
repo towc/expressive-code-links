@@ -1,0 +1,39 @@
+{
+  "name": "expressive-code-links",
+  "version": "1.2.0",
+  "description": "Links inside code blocks, by escaping markdown syntax",
+  "keywords": [],
+  "homepage": "https://github.com/towc/expressive-code-links#readme",
+  "bugs": {
+    "url": "https://github.com/towc/expressive-code-links/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/towc/expressive-code-links.git"
+  },
+  "license": "MIT",
+  "author": "Matei Copot (yourweekly.dev)",
+  "type": "module",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "default": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup ./src/index.ts --format esm --dts --sourcemap --clean"
+  },
+  "devDependencies": {
+    "tsm": "^2.3.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^6.0.7"
+  },
+  "peerDependencies": {
+    "@expressive-code/core": "^0.41.5"
+  },
+  "module": "./dist/index.js"
+}
