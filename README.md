@@ -2,16 +2,16 @@
 
 A plugin for https://expressive-code.com/
 
-Allows you to add links to code blocks, by prepending them with `\\`:
+Allows you to add links to code blocks, by prepending them with `\`:
 
 ```js
-// comes from \\[towc/expressive-code-links](https://github.com/towc/expressive-code-links)
-import { pluginLink } from '\\[expressive-code-links]](https://github.com/towc/expressive-code-links)'
+// comes from \[towc/expressive-code-links](https://github.com/towc/expressive-code-links)
+import { pluginLink } from '\[expressive-code-links]](https://github.com/towc/expressive-code-links)'
 
 // can have multiple links in one line!
-// usage as per \\[expressive code](https://expressive-code.com)'s \\[plugin documentation](https://expressive-code.com/reference/configuration/#plugins)
+// usage as per \[expressive code](https://expressive-code.com)'s \[plugin documentation](https://expressive-code.com/reference/configuration/#plugins)
 
-// so for \\[astro](https://astro.build/):
+// so for \[astro](https://astro.build/):
 export default defineConfig({
   integrations: [
     expressiveCode({
@@ -25,7 +25,7 @@ const array = [(x) => x]
 const one = array[0](1)
 
 const README = { md: 2 }
-const \\[link](README.md) = 0
+const \[link](README.md) = 0
 const two = array [link](README.md)
 ```
 
@@ -55,7 +55,7 @@ The color of the link is inherited from what the underlying text should be. The 
 
 ## Bugs
 
-- [ ] doesn't allow escaping of the link, e.g. `\\\\[link](href)` still renders as `\\link`
+- [ ] doesn't allow escaping of the link, e.g. `\\[link](href)` still renders as `\<a href="href">link</a>`
   - not planning to implement, let me know if this affects you!
 - [ ] breaks when spanning multiple elements
   - not planning to fix, let me know if you have a legitimate usecase!
